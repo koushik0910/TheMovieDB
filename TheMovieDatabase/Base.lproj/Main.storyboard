@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Details View Controller-->
+        <scene sceneID="VJq-gl-kxe">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailsViewController" id="eHa-39-tYm" customClass="MovieDetailsViewController" customModule="TheMovieDatabase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qg0-Ph-ZBL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="b1H-js-Mcj">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nqW-nw-z8d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nqW-nw-z8d" firstAttribute="bottom" secondItem="b1H-js-Mcj" secondAttribute="bottom" id="4LU-Jo-qv6"/>
+                            <constraint firstItem="b1H-js-Mcj" firstAttribute="top" secondItem="nqW-nw-z8d" secondAttribute="top" id="L4y-WR-38z"/>
+                            <constraint firstItem="b1H-js-Mcj" firstAttribute="leading" secondItem="nqW-nw-z8d" secondAttribute="leading" id="gvF-bu-iD5"/>
+                            <constraint firstItem="nqW-nw-z8d" firstAttribute="trailing" secondItem="b1H-js-Mcj" secondAttribute="trailing" id="nAe-tC-m9A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="b1H-js-Mcj" id="fCp-Dl-mQW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDM-fN-GRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="-65"/>
+        </scene>
+        <!--Movie List View Controller-->
+        <scene sceneID="Hc7-o1-AJl">
+            <objects>
+                <viewController storyboardIdentifier="MovieListViewController" id="v11-0u-0LN" customClass="MovieListViewController" customModule="TheMovieDatabase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m2X-qu-zAB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hOH-LY-pwk">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cC5-M3-s65"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hOH-LY-pwk" firstAttribute="top" secondItem="cC5-M3-s65" secondAttribute="top" id="6w4-RE-X8h"/>
+                            <constraint firstItem="cC5-M3-s65" firstAttribute="trailing" secondItem="hOH-LY-pwk" secondAttribute="trailing" id="H08-J7-wjN"/>
+                            <constraint firstItem="hOH-LY-pwk" firstAttribute="leading" secondItem="cC5-M3-s65" secondAttribute="leading" id="XnB-dU-VYX"/>
+                            <constraint firstItem="cC5-M3-s65" firstAttribute="bottom" secondItem="hOH-LY-pwk" secondAttribute="bottom" id="tvm-1N-IxZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movieListTableView" destination="hOH-LY-pwk" id="7BC-eu-1Iw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZS0-do-d6Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="-65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

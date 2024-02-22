@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="CrewDetailsCollectionViewCell" customModule="TheMovieDatabase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="221"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="154" height="221"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUg-Su-0Ei">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="221"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOh-pa-vz7">
+                                <rect key="frame" x="3" y="0.0" width="148" height="221"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3S-AJ-aOI" customClass="CustomImageView" customModule="TheMovieDatabase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="eZP-k9-4DN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTp-hv-Wgn">
+                                        <rect key="frame" x="8" y="176.33333333333334" width="132" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5K9-L0-HMC">
+                                        <rect key="frame" x="8" y="155" width="132" height="19.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="h3S-AJ-aOI" firstAttribute="leading" secondItem="DOh-pa-vz7" secondAttribute="leading" id="4Wh-Fa-tgu"/>
+                                    <constraint firstAttribute="trailing" secondItem="h3S-AJ-aOI" secondAttribute="trailing" id="7NC-yc-MM1"/>
+                                    <constraint firstItem="zTp-hv-Wgn" firstAttribute="top" secondItem="5K9-L0-HMC" secondAttribute="bottom" constant="2" id="ApN-gC-ypk"/>
+                                    <constraint firstItem="5K9-L0-HMC" firstAttribute="top" secondItem="h3S-AJ-aOI" secondAttribute="bottom" constant="5" id="Bb0-4B-PFW"/>
+                                    <constraint firstItem="zTp-hv-Wgn" firstAttribute="leading" secondItem="DOh-pa-vz7" secondAttribute="leading" constant="8" id="i8e-cd-whF"/>
+                                    <constraint firstItem="5K9-L0-HMC" firstAttribute="leading" secondItem="DOh-pa-vz7" secondAttribute="leading" constant="8" id="oTq-DQ-YeV"/>
+                                    <constraint firstAttribute="trailing" secondItem="zTp-hv-Wgn" secondAttribute="trailing" constant="8" id="peU-fA-ELt"/>
+                                    <constraint firstAttribute="trailing" secondItem="5K9-L0-HMC" secondAttribute="trailing" constant="8" id="sLS-as-pX6"/>
+                                    <constraint firstItem="h3S-AJ-aOI" firstAttribute="top" secondItem="DOh-pa-vz7" secondAttribute="top" id="yqh-5Z-pmO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DOh-pa-vz7" secondAttribute="bottom" id="5N0-6J-i3V"/>
+                            <constraint firstItem="DOh-pa-vz7" firstAttribute="top" secondItem="XUg-Su-0Ei" secondAttribute="top" id="Son-rX-8wL"/>
+                            <constraint firstItem="DOh-pa-vz7" firstAttribute="leading" secondItem="XUg-Su-0Ei" secondAttribute="leading" constant="3" id="U9x-jq-0GK"/>
+                            <constraint firstAttribute="trailing" secondItem="DOh-pa-vz7" secondAttribute="trailing" constant="3" id="l78-fr-Orp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="XUg-Su-0Ei" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="70a-av-AF9"/>
+                <constraint firstItem="XUg-Su-0Ei" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IN3-YO-OLb"/>
+                <constraint firstAttribute="bottom" secondItem="XUg-Su-0Ei" secondAttribute="bottom" id="il1-oh-Wt8"/>
+                <constraint firstAttribute="trailing" secondItem="XUg-Su-0Ei" secondAttribute="trailing" id="lJx-x5-OPc"/>
+            </constraints>
+            <size key="customSize" width="154" height="221"/>
+            <connections>
+                <outlet property="character" destination="zTp-hv-Wgn" id="lXX-z3-NsB"/>
+                <outlet property="crewCardView" destination="DOh-pa-vz7" id="VXR-IV-csk"/>
+                <outlet property="name" destination="5K9-L0-HMC" id="bWL-bf-6Ed"/>
+                <outlet property="profileImage" destination="h3S-AJ-aOI" id="zl2-Vk-nMC"/>
+            </connections>
+            <point key="canvasLocation" x="80.916030534351137" y="39.7887323943662"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
