@@ -33,7 +33,7 @@ class MovieDetailsAPIService: MovieDetailsInteractor{
                 ]
                 let apiResource = MovieDetailsResource(queryParams: queryParams, movieId: String(id))
                 let request = apiResource.urlRequest
-                let movie: Movie = try await NetworkUtility.shared.request(urlRequest: request)
+                let movie: Movie = try await NetworkUtilityiOS.shared.request(urlRequest: request)
                 delegate?.fetchMovieDetailsSuccess(movies: movie)
             } catch {
                 delegate?.fetchMovieDetailsFailure(error: error as? NetworkError)

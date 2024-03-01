@@ -35,7 +35,7 @@ class MovieListAPIService: MovieListInteractor {
                 ]
                 let apiResource = PopularMovieResource(queryParams: queryParams)
                 let request = apiResource.urlRequest
-                let movieData: MovieData = try await NetworkUtility.shared.request(urlRequest: request)
+                let movieData: MovieData = try await NetworkUtilityiOS.shared.request(urlRequest: request)
                 delegate?.fetchPopularMoviesSuccess(movies: movieData.movies)
             } catch {
                 delegate?.fetchPopularMoviesFailure(error: error as? NetworkError)
@@ -52,7 +52,7 @@ class MovieListAPIService: MovieListInteractor {
                 ]
                 let apiResource = TopRatedMovieResource(queryParams: queryParams)
                 let request = apiResource.urlRequest
-                let movieData: MovieData = try await NetworkUtility.shared.request(urlRequest: request)
+                let movieData: MovieData = try await NetworkUtilityiOS.shared.request(urlRequest: request)
                 delegate?.fetchTopRatedMoviesSuccess(movies: movieData.movies)
             } catch {
                 delegate?.fetchTopRatedMoviesFailure(error: error as? NetworkError)
