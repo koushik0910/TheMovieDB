@@ -6,7 +6,7 @@ target 'TheMovieDatabase' do
   use_frameworks!
 
   # Pods for TheMovieDatabase
-	pod 'NetworkUtility'
+	pod 'NetworkUtility', '~> 1.0'
   target 'TheMovieDatabaseTests' do
     inherit! :search_paths
     # Pods for testing
